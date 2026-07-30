@@ -1,8 +1,25 @@
 aid: meanwhile
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/meanwhile.png
 name: Meanwhile
-description: 'Meanwhile is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Meanwhile is the first BMA-licensed innovative life insurer in Bermuda, offering whole
+  life insurance policies denominated entirely in Bitcoin rather than fiat. Its BTC Life product lets
+  customers pay premiums in Bitcoin that grow at a guaranteed rate in Bitcoin terms, borrow tax-free
+  against up to 90% of policy value after one year, and pass a full day-one death benefit to
+  beneficiaries without managing wallets or seed phrases. The company is backed by Pantera, Bain
+  Capital Crypto, Sam Altman, Northwestern Mutual, and Framework Ventures, and raised $82M in October
+  2025. Meanwhile publishes no public developer API, portal, or SDKs; this profile captures its
+  identity, public web properties, and probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/meanwhile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Crypto
+- Bitcoin
+- Insurance
+- Life Insurance
+- Fintech
+- Bermuda
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://meanwhile.bm/
+- type: Login
+  url: https://application.meanwhile.bm/
+- type: TermsOfService
+  url: https://meanwhile.bm/terms/
+- type: PrivacyPolicy
+  url: https://meanwhile.bm/privacy/
+- type: Support
+  url: mailto:hello@meanwhile.bm
+- type: DomainSecurity
+  url: security/meanwhile-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
